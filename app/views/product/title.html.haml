@@ -53,38 +53,41 @@
 	%h3 Register:
 
 	%form{ action: "" }
-		%span First name:
-		%input{ type: "text", name: "fname" }
-		%span Last name:
-		%input{ type: "text", name: "lname" }
-		%br
-		%br
-		%span Enter password:
-		%input{ type: "password", name: "pass1" }
-		%span Confirm password:
-		%input{ type: "password", name: "pass2" }
-		%br
-		%br
-		%span Enter email:
-		%input{ type: "text", name: "email" }
-		%p Gender:
-		%input{ type: "radio", name: "sex", value: "male" } Male
-		%br
-		%input{ type: "radio", name: "sex", value: "female" } Female
-		%br
-		%br
-		%input{ type: "submit", name: "sub" }
+		%fieldset
+			%span First name:
+			%input{ type: "text", name: "fname" }
+			%span Last name:
+			%input{ type: "text", name: "lname" }
+			%br
+			%br
+			%span Enter password:
+			%input{ type: "password", name: "pass1" }
+			%span Confirm password:
+			%input{ type: "password", name: "pass2" }
+			%br
+			%br
+			%span Enter email:
+			%input{ type: "text", name: "email" }
+			%p Gender:
+			%input{ type: "radio", name: "sex", value: "male" } Male
+			%br
+			%input{ type: "radio", name: "sex", value: "female" } Female
+			%br
+			%br
+			%input{ type: "submit", name: "sub" }
 
 %a{ name: 'feedback' }
+
 	%h3 Feedback:
-	%span Commenter:
-	%input{ type: "text", value: "" }
-	%br
-	%br
-	%p Comment:
-	%textarea{ rows: "4", cols: "30" }
-	%br
-	%input{ type: "submit", name: "com", value: "Submit comment" }
+	%fieldset
+		%span Commenter:
+		%input{ type: "text", value: "" }
+		%br
+		%br
+		%p Comment:
+		%textarea{ rows: "4", cols: "30" }
+		%br
+		%input{ type: "submit", name: "com", value: "Submit comment" }
 
 %footer
 	%span Copyright Oleksandr
