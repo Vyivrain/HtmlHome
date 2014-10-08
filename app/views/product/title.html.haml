@@ -1,0 +1,100 @@
+%h1 Sofa store
+%h3 Menu
+%ul 
+	%li 
+		%a{ href: '#about' } About
+	%li 
+		%a{ href: '#faq' } FAQ
+	%li 
+		%a{ href: '#contacts' } Contacts
+	%li
+		%a{ href: '#register' } Register
+	%li
+		%a{ href: '#feedback' } Feedback
+
+%a{ name: 'about' } 
+	%table
+		%tr
+			%td
+				.image-render
+					%img{ :src => "/assets/sofa.jpg" }
+			%td
+				.text-render
+					%dl
+						%dt 
+							%h3 Name:
+						%dd
+							%p	Sofa XXL
+						%dt
+							%h3 Price:		
+						%dd
+							%p $300.00
+						%dt
+							%h3 Description:
+						%dd
+							%p Modern and minimalist, this stationary sofa is perfect for your contemporary-style home. With low track arms and front-to-back platform wood legs, this 2-over-2 cushion sofa brings a crisp, clean, and updated look to any room in your home. Its bonded leather seats are soft and supple, while pocket coil seating and a sinuous spring base is consistently supportive and durable.
+
+%a{ name: 'faq' }
+	%h3 FAQ:
+	%ol
+		%li Can we have a discount?
+		%li Can we get a credit on this product?
+		%li How many sofas left in storage?
+		%li Do you have similar sofas for lower price?
+		%li Are there any other color sofas?
+		%li Why do you have shop in Antarctica?
+%a{ name: 'contacts' }
+	%h3 Contacts:
+	%p See us in Antarctica with coords -71.8 latitude, 20.2 longitude
+	%p We even have a facebook group with great pictures of us with penguins and polar bears
+
+
+%a{ name: 'register' }
+	%h3 Register:
+
+	%form{ action: "" }
+		%span First name:
+		%input{ type: "text", name: "fname" }
+		%span Last name:
+		%input{ type: "text", name: "lname" }
+		%br
+		%br
+		%span Enter password:
+		%input{ type: "password", name: "pass1" }
+		%span Confirm password:
+		%input{ type: "password", name: "pass2" }
+		%br
+		%br
+		%span Enter email:
+		%input{ type: "text", name: "email" }
+		%p Gender:
+		%input{ type: "radio", name: "sex", value: "male" } Male
+		%br
+		%input{ type: "radio", name: "sex", value: "female" } Female
+		%br
+		%br
+		%input{ type: "submit", name: "sub" }
+
+%a{ name: 'feedback' }
+	%h3 Feedback:
+	%span Commenter:
+	%input{ type: "text", value: "" }
+	%br
+	%br
+	%p Comment:
+	%textarea{ rows: "4", cols: "30" }
+	%br
+	%input{ type: "submit", name: "com", value: "Submit comment" }
+
+%footer
+	%span Copyright Oleksandr
+	%span 
+		%a{ href: '#about' } About
+	%span 
+		%a{ href: '#faq' } FAQ
+	%span
+		%a{ href: '#contacts' } Contacts
+	%span
+		%a{ href: '#register' } Register
+	%span 
+		%a{ href: '#feedback' } Feedback
