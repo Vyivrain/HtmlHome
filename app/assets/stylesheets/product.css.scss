@@ -13,3 +13,50 @@
 footer {
 	text-align: center;
 }
+
+body {
+	background-color: #FFE194;
+}
+
+
+header {
+	font-family: Verdana;
+	font-size: 15px;
+	color: red;
+	text-shadow: 0.5px 0.5px #001242;
+}
+
+p:first-letter {
+	font-size: 200%;
+	color: green;
+}
+
+a {
+	color: #482E74;
+}
+
+header a {
+	color: blue;
+}
+
+a:hover {
+	color: grey;
+	text-shadow: 0.3px 0.3px green;
+}
+
+.type {
+	font-size: 30px;
+}
+
+a {
+	color: #472F13;
+	padding: 5px;
+}
+
+p::before {
+	content: "^_^";
+}
+
+p::after {
+	content: "*_*"
+}
